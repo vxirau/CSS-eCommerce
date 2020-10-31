@@ -1,0 +1,169 @@
+.example1{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.codiEx1{
+    width: 100%;
+}
+
+.example2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx2{
+    width: 49%;
+    height: 300px;
+}
+
+.example2 img{
+    width: 49%;
+    height: 300px;
+}
+
+.example3{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx3{
+    width: 49%;
+    height: 300px;
+}
+
+.example3 img{
+    width: 49%;
+    height: 300px;
+}
+
+.example4{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx4{
+    width: 49%;
+    height: 500px;
+}
+
+.example4 img{
+    width: 49%;
+    height: 500px;
+}
+
+.example5{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx5{
+    width: 49%;
+    height: 500px;
+}
+
+.example5 img{
+    width: 49%;
+    height: 500px;
+}
+
+.example6{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx6{
+    width: 49%;
+    height: 500px;
+}
+
+.example6 img{
+    width: 49%;
+    height: 500px;
+}
+
+.example7{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx7{
+    width: 49%;
+    height: 300px;
+}
+
+.example7 img{
+    width: 49%;
+    height: 300px;
+}
+
+.example8{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx8{
+    width: 49%;
+    height: 300px;
+}
+
+.example8 img{
+    width: 49%;
+    height: 300px;
+}
+
+.example9{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.codiEx9{
+    width: 100%;
+}
+
+.example10{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.codiEx10{
+    width: 100%;
+}
+
+
+.example11{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codiEx11{
+    width: 49%;
+    height: 300px;
+}
+
+.example11 img{
+    width: 49%;
+    height: 300px;
+}

@@ -1,0 +1,42 @@
+.example2{
+    text-align: center; 
+    color: #e80000; 
+    margin-bottom: 20px
+}
+.example3{
+    text-align: center; 
+    color: #737373; 
+    font-size: 50px;
+}
+.example3 .red{
+    color: #c02525; 
+}
+.example3 .blue{
+    color: #2d0ed8; 
+}
+.example3 .black{
+    color: #000000; 
+}
+span{
+    color: #c02525; 
+}
+.margin{
+    color: #fbcb70;
+}
+.border{
+    color: #d3a317;
+}
+.padding{
+    color: #c2cf89;
+}
+.example4{
+    width: 350px;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid #ccc;
+    background-color: white;
+}
+.boxModelExamples img{
+    height: 15em
+}
+
+

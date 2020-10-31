@@ -1,0 +1,188 @@
+.example1{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code1 image1"
+}
+
+.codiEx1{
+    grid-area: code1;
+}
+
+.example1 img{
+    grid-area: image1;
+    width: 400px;
+    height: 300px;
+}
+
+.example2{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code2 image2"
+}
+
+.codiEx2{
+    grid-area: code2;
+}
+
+.example2 img{
+    grid-area: image2;
+    width: 400px;
+    height: 300px;
+}
+
+.example3{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code3 image3"
+}
+
+.codiEx3{
+    grid-area: code3;
+}
+
+.example3 img{
+    grid-area: image3;
+    width: 400px;
+    height: 300px;
+}
+
+.example4{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code4 image41"
+                "code4 image42"
+}
+
+.codiEx4{
+    grid-area: code4;
+}
+
+.example4 .img1{
+    grid-area: image41;
+    width: 400px;
+    height: 150px;
+}
+
+.example4 .img2{
+    grid-area: image42;
+    width: 400px;
+    height: 150px;
+}
+
+.example5{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code5 image51"
+                "code5 image52"
+}
+
+.codiEx5{
+    grid-area: code5;
+}
+
+.example5 .img1{
+    grid-area: image51;
+    width: 400px;
+    height: 150px;
+}
+
+.example5 .img2{
+    grid-area: image52;
+    width: 400px;
+    height: 150px;
+}
+
+.example6{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code6 image6"
+}
+
+.codiEx6{
+    grid-area: code6;
+}
+
+.example6 img{
+    grid-area: image6;
+    width: 400px;
+    height: 300px;
+}
+
+.example7{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code7 image71"
+                "code7 image72"
+}
+
+.codiEx7{
+    grid-area: code7;
+}
+
+.example7 .img1{
+    grid-area: image71;
+    width: 400px;
+    height: 150px;
+}
+
+.example7 .img2{
+    grid-area: image72;
+    width: 400px;
+    height: 150px;
+}
+
+.example8{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+                "code8 image81"
+                "code8 image82"
+}
+
+.codiEx8{
+    grid-area: code8;
+}
+
+.example8 .img1{
+    grid-area: image81;
+    width: 400px;
+    height: 150px;
+}
+
+.example8 .img2{
+    grid-area: image82;
+    width: 400px;
+    height: 150px;
+}
+
