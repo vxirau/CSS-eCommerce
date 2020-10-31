@@ -13,7 +13,7 @@
     <h1>Práctica 01</h1>
     <nav>
       <ul style="list-style-type: none;">
-        <li></li>
+        <li style="color: white;"></li>
       </ul>
     </nav>
     <section id="📷">
