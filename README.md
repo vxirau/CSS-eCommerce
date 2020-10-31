@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Proyetos Web - 00 - Prácticas</title>
   <link rel="stylesheet" type="text/css" href="enunciado/dist/prism.css">
   <link rel="stylesheet" type="text/css" href="enunciado/dist/styles.css">
 </head>
@@ -96,7 +95,6 @@
       </p>
     </section>
   </article>
-  <script src="enunciado/dist/prism.js"></script>
 </body>
 
 </html>
