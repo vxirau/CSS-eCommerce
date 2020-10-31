@@ -7,13 +7,14 @@
   <link rel="stylesheet" type="text/css" href="enunciado/dist/prism.css">
   <link rel="stylesheet" type="text/css" href="enunciado/dist/styles.css">
 </head>
-
 <body>
   <article class="markdown-body">
     <h1>Práctica 01</h1>
     <nav>
       <ul style="list-style-type: none;">
-        <li style="color: white;"></li>
+        <li>Marti Ejarque Galindo</li>
+        <li>Rafael Morera Jeeninga</li>
+        <li>Victor Xirau Guardans</li>
       </ul>
     </nav>
     <section id="📷">
