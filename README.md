@@ -13,10 +13,10 @@
     <h1>Práctica 01</h1>
     <nav>
       <ul>
-        <li><a href="#📷">Objetivos</a></li>
-        <li><a href="#📄">Enunciado</a></li>
-        <li><a href="#❗">Requisitos</a></li>
-        <li><a href="#📦">Formato Entrega</a></li>
+        <li><a href="">Objetivos</a></li>
+        <li><a href="">Enunciado</a></li>
+        <li><a href="">Requisitos</a></li>
+        <li><a href="">Formato Entrega</a></li>
       </ul>
     </nav>
     <section id="📷">
