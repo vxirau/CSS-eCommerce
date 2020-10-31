@@ -9,7 +9,7 @@
 </head>
 <body>
   <article class="markdown-body">
-    <h1>Práctica 01 - Enunciado</h1>
+    <h1>Práctica 1</h1>
     <nav>
       <ul style="list-style-type: none;">
         <li>Marti Ejarque Galindo</li>
