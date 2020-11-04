@@ -81,17 +81,7 @@
       </ul>
       </p>
     </section>
-    <section id="📦">
-      <h2>️️️📦 Formato Entrega</h2>
-      <p>
-        Cada componente del equipo debe de entregar de manera <b>individual</b> en la fecha indicada en el pozo del
-        eStudy correspondiente un fichero zip con el componente
-        que ha desarrolado:
-      <ul>
-        <li>El nombre del archivo comprimido debe ser <b>GRUPO_NUMEROGRUPO_APELLIDO1_APELLIDO2_NOMBRE_P1.zip</b></li>
-      </ul>
-      </p>
-    </section>
+   
   </article>
 </body>
 
