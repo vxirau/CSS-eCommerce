@@ -12,6 +12,7 @@
     <h1>Práctica 1</h1>
     <nav>
       <ul style="list-style-type: none;">
+        <li><h3>Grupo 20</h3></li>
         <li>Marti Ejarque Galindo</li>
         <li>Rafael Morera Jeeninga</li>
         <li>Victor Xirau Guardans</li>
