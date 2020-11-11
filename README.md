@@ -11,8 +11,8 @@
   <article class="markdown-body">
     <h1>Práctica 1</h1>
     <nav>
+      <h3>Grupo 20</h3>
       <ul style="list-style-type: none;">
-        <li><h3>Grupo 20</h3></li>
         <li>Marti Ejarque Galindo</li>
         <li>Rafael Morera Jeeninga</li>
         <li>Victor Xirau Guardans</li>
