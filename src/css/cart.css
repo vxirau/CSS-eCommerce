@@ -158,4 +158,46 @@ img {
 .arrow-button{
   float: left;
 }
+
+.circle {
+	font-size:50px;
+	font-weight: normal;
+	color: rgba(98,0,238,1);
+	display: flex;
+	width: 40px;
+	height: 40px;
+	padding: 1px 0 0 1px;
+	background: rgba(3,218,197,.9);
+	border-radius: 10000px;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+	position: absolute;
+	bottom:10px;
+	right:10px;
+}
+
+#modal:checked + .circle {
+	color: rgba(3,218,197,1);
+	width: 1500px;
+	height: 1500px;
+	background: rgba(98,0,238,.75);
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+	bottom:-720px;
+	right:-720px;
+}
+.rotatePlus {
+	transform: rotate(0deg);
+	transition: .4s transform cubic-bezier(.7,0,.3,1);
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+#modal:checked ~ .circle > .rotatePlus {
+	transform: rotate(945deg);
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
   
