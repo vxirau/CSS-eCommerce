@@ -77,16 +77,19 @@ body {
   .menu { grid-area: menu; }
 
   #apartado1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
     width:400px;
     height:200px;
     margin: 1rem;
     padding: 1rem;
     border-radius:22px;
     background-color: bisque;
-    border: 2px solid #ccc;
     text-align: center;
-
  }
+
+
 
  .input-container{
     width: 250px;
@@ -138,66 +141,45 @@ img {
   object-fit: contain;
 }
 
-.arrow {
+.arrow-up, .arrow-down {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
 
-.up {
+.arrow-up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
 
-.down {
+.aUp, .aDown {
+  border:none;
+}
+
+.arrow-down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
 .arrow-button{
-  float: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+      "arrow-up ." 
+      ". num" 
+      "arrow-down .";
+  width:30px;
+  height:60px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius:22px;
+  background-color: white;
+  text-align: center;
+
 }
 
-.circle {
-	font-size:50px;
-	font-weight: normal;
-	color: rgba(98,0,238,1);
-	display: flex;
-	width: 40px;
-	height: 40px;
-	padding: 1px 0 0 1px;
-	background: rgba(3,218,197,.9);
-	border-radius: 10000px;
-	justify-content: center;
-	align-items: center;
-	transition: 0.4s all cubic-bezier(.7,0,.3,1);
-	position: absolute;
-	bottom:10px;
-	right:10px;
-}
 
-#modal:checked + .circle {
-	color: rgba(3,218,197,1);
-	width: 1500px;
-	height: 1500px;
-	background: rgba(98,0,238,.75);
-	transition: 0.4s all cubic-bezier(.7,0,.3,1);
-	bottom:-720px;
-	right:-720px;
-}
-.rotatePlus {
-	transform: rotate(0deg);
-	transition: .4s transform cubic-bezier(.7,0,.3,1);
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	user-select: none;
-	cursor: pointer;
-}
-#modal:checked ~ .circle > .rotatePlus {
-	transform: rotate(945deg);
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	user-select: none;
-}
   
