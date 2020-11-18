@@ -4,154 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
-    <!--<link rel="stylesheet" href="../css/productList.css">!-->
+    <link rel="stylesheet" href="../css/productList.css">
 </head>
-<style>
-    :root{
-    --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
-    --width-container: 1200px;
-  }
-
-  body{
-    background-color:#f2f2f2;
-    font-family: 'RobotoDraft', 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  .card-grid{
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 24px;
-    margin: auto;
-    width: 70%;
-  }
- 
-  .card{
-    list-style: none;
-    position: relative;
-    height: 300px;
-  }
-  
-  .card:before{
-    content: '';
-    display: block;
-    padding-bottom: 150%;
-    width: 100%;
-  }
-  
-  .cardFons{
-    background-size: cover;
-    background-position: center;
-    border-radius: 24px;
-    bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: 
-      filter 200ms linear,
-      transform 200ms linear;
-  }
-  
-  .card:hover .cardFons{
-    transform: scale(1.05) translateZ(0) scaleX(1.2);
-  }
-
-  .card:hover .cardImage{
-    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .card-grid:hover > .card:not(:hover) .cardFons{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-
-  .card-grid:hover > .card:not(:hover) .cardImage{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .cardInformacio{
-    left: 0;
-    padding: 24px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .cardPrice{
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-s);
-    text-transform: uppercase;
-  }
-
-  .cardImage{
-    left: 100px;
-    padding: 24px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .cardName{
-    color: var(--text-lighter);
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
-  }
-
- 
-
-</style>
 <body>
-    <section class="hero-section">
+  <br>
+  <br>
     <div class="card-grid">
 
-        <a class="card" href="#">
-        <div class="cardFons" style="background-color: #D2BB68;"></div>
-        <div class="cardInformacio">
-            <p class="cardPrice">225€</p>
-            <h3 class="cardName">Block Gold Imogene</h3>
-            <img class="cardImage" src="../../assets/producte/gafas.png" alt="g">
-        </div>
+        <a class="card" href="#producte1" id="tarjeta">
+          <div class="cardFons" style="background-color: #D2BB68;" id="producte1" ></div>
+          <div class="cardInformacio">
+              <p class="cardPrice">225€</p>
+              <h3 class="cardName">Block Gold Imogene</h3>
+              <img class="cardImage" src="../../assets/producte/gafas.png" alt="g">
+          </div>
         </a>
       
 
-        <a class="card" href="#">
-        <div class="cardFons" style="background-color: #C15D5D;"></div>
-        <div class="cardInformacio">
-            <p class="cardPrice">193</p>
-            <h3 class="cardName">Round Crystal Gold</h3>
-            <img class="cardImage" src="../../assets/producte/gafas2.png" alt="g">
-        </div>
+        <a class="card" href="#producte2">
+          <div class="cardFons" style="background-color: #C15D5D;" id="producte2" ></div>
+          <div class="cardInformacio">
+              <p class="cardPrice">193€</p>
+              <h3 class="cardName">Round Crystal Gold</h3>
+              <img class="cardImage" src="../../assets/producte/gafas2.png" alt="g">
+          </div>
         </a>
 
         
-        <a class="card" href="#">
-        <div class="cardFons" style="background-color: #714283;"></div>
-        <div class="cardInformacio">
-            <p class="cardPrice">210€</p>
-            <h3 class="cardName">Block Gold Imogene</h3>
-            <img class="cardImage" src="../../assets/producte/gafas3.png" alt="g" width="75%" style="paggin-left: 20px">
-        </div>
+        <a class="card" href="#producte3">
+          <div class="cardFons" style="background-color: #714283;" id="producte3" ></div>
+          <div class="cardInformacio">
+              <p class="cardPrice">210€</p>
+              <h3 class="cardName">Block Gold Imogene</h3>
+              <img class="cardImage" src="../../assets/producte/gafas3.png" alt="g" width="75%" style="paggin-left: 20px">
+          </div>
         </a>
 
 
-        <a class="card" href="#">
-        <div class="cardFons" style="background-color: #71B083;"></div>
-        <div class="cardInformacio">
-            <p class="cardPrice">180€</p>
-            <h3 class="cardName">Nuevas Gafas</h3>
-            <img class="cardImage" src="../../assets/producte/gafas4.png" alt="g" width="75%" style="paggin-left: 20px; padding-top: 70px;">
-        </div>
+        <a class="card" href="#producte4">
+          <div class="cardFons" style="background-color: #71B083;" id="producte4" ></div>
+          <div class="cardInformacio">
+              <p class="cardPrice">180€</p>
+              <h3 class="cardName">Nuevas Gafas</h3>
+              <img class="cardImage" src="../../assets/producte/gafas4.png" alt="g" width="75%" style="paggin-left: 20px; padding-top: 70px;">
+          </div>
         </a>
 
 
     <div>
-    </section>
 </body>
 </html>
