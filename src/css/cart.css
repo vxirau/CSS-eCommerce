@@ -234,6 +234,7 @@ input[type="text"]::placeholder{
   display: block;
   border:none;
   outline:none;
+  background-color: transparent;
 }
 
 .aUp:active, .aDown:active{
