@@ -4,11 +4,18 @@
   --width-container: 1200px;
 }
 
-body{
-  background-color:#f2f2f2;
+body,a{
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+p, h3{
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
 
 .card-grid{
   display: grid;
@@ -29,7 +36,6 @@ body{
 .card:before{
   content: '';
   display: block;
-  padding-bottom: 150%;
   width: 100%;
 }
 
@@ -51,6 +57,8 @@ body{
   transition: 
     filter 1s linear,
     transform 500ms linear;
+  
+
 }
 
 
@@ -75,6 +83,8 @@ body{
   padding: 24px;
   position: absolute;
   top: 0;
+  overflow: hidden;
+
 }
 
 .cardPrice{
@@ -103,23 +113,69 @@ body{
 }
 
 
-:target{
-  animation: enlarge 2s ease;
+.descripcio{
+  background-color: white;
+  height: 300px;
+  z-index: 7;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 45px 45px 0px 0px;
+  display: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+:target .descripcio{
+  display: flex;
+  animation: descriptionEnter 1s ease;
   animation-timing-function:linear;
   animation-fill-mode:forwards;
-  
+}
+
+:target .cardFons{
+  animation: enlarge 2s ease;
+  z-index: 5;
+  animation-timing-function:linear;
+  animation-fill-mode:forwards;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+:target .cardInformacio{
+  z-index: 7;
+}
+
+@keyframes descriptionEnter {
+  from {
+    margin-top: 190%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 90%;
+    height: 300%;
+  }
 }
 
 
 @keyframes enlarge {
   0%   {
-    transform: scale(1.05) translateZ(0) scaleX(1.2)
+    transform: scaleY(1.0) translateZ(0) scaleX(1.2)
+  }
+  25%{
+    transform: scaleY(4) translateZ(0) scaleX(1.2)
   }
   50%  {
-    transform: scale(3.5) translateZ(0) scaleX(2.7)
+    transform: scaleY(4.5) translateZ(0) scaleX(2.0)
+  }
+  75%{
+    transform: scaleY(5.5) translateZ(0) scaleX(2.0)
   }
   100% {
-    transform: scale(5.05) translateZ(0) scaleX(3.2)
+    transform: scaleY(7) translateZ(0) scaleX(2.0)
   }
 }
 
@@ -127,12 +183,11 @@ body{
   .card-grid{
     grid-template-columns: repeat(2, 1fr); 
   }
+  .card:hover .cardFons{
+    transform: scale(1.0) translateZ(0);
+  }
+
 }
 
-@media(min-width: 1250px){
-  .card-grid{
-    grid-template-columns: repeat(4, 1fr); 
- 
-  }
-}
+
 
