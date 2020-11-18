@@ -73,14 +73,13 @@ div.menu-pane {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 10px;
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .menu-links li a {
   color: rgb(179, 179, 179);
   text-decoration: none;
 }
-
 
 .menu-links li:hover a {
   color: #3a3a3a;
@@ -100,7 +99,7 @@ input.hamburger-checkbox {
     #hamburger-label{
       display: none;
     }
-    
+
 }
 
 
