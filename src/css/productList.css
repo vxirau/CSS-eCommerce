@@ -1,7 +1,6 @@
 :root {
 	--text-light: rgba(255, 255, 255, 0.6);
 	--text-lighter: rgba(255, 255, 255, 0.9);
-	--width-container: 1200px;
 }
 
 body,
@@ -357,6 +356,8 @@ h3 {
 	display: block;
 }
 
+
+
 :target .catego-container {
 	display: grid;
 	opacity: 0.0;
@@ -503,13 +504,16 @@ input:checked+label:after {
 	}
 }
 
-
-
 @media(min-width: 750px) {
 	.card-grid {
-		grid-template-columns: repeat(2, 1fr);
-		margin-top: 3%;
+		display: flex;
 	}
+
+	.card{
+		flex: 1;
+		height: 300px;
+	}
+
 	.card:hover .cardFons {
 		transform: scale(1.0) translateZ(0);
 	}
@@ -534,5 +538,111 @@ input:checked+label:after {
 	.scrollmenu a:hover {
 		color: #EA612E;
 	}
+
+	:target .descripcio {
+		animation: descriptionEnterDesktop 1s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	:target .card{
+		width: 200vw;
+		height: 1200vh;
+		transition: width 1s, height 1s;
+	}
 	
+	:target .cardFons {
+		display: inline-block;
+		justify-self: center;
+		align-self: center;
+		height: 2em;
+		animation: enlargeDesktop 2s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+	
+	:target .cardImage {
+		animation: glassesDetailDesktop 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	:target .cardPrice {
+		animation: cardPriceTransition 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+		
+	:target .catego-container {
+		animation: categoryDesktop 2.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+	:target .like {
+		animation: categoryDesktop 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+}
+
+@keyframes prova{
+	to{
+		border-radius: 0;
+		z-index: 9999; 
+		width: 100%; 
+		height: 100%; 
+		top: 0; 
+		left: 0; 
+	}
+}
+
+
+@keyframes categoryDesktop {
+	from {
+		opacity: 0.0;
+	}
+	to {
+		opacity: 1.0;
+	}
+}
+
+@keyframes glassesDetailDesktop {
+	to {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes descriptionEnterDesktop {
+	from {
+		margin-top: 190%;
+		height: 300%;
+	}
+	to {
+		margin-top: 90%;
+		height: 300%;
+	}
+}
+
+
+@keyframes enlargeDesktop {
+	0% {
+		transform: scaleY(1.0) translateZ(0) scaleX(1.2)
+	}
+	25% {
+		transform: scaleY(3) translateZ(0) scaleX(3.2)
+	}
+	50% {
+		transform: scaleY(3.5) translateZ(0) scaleX(6.0)
+	}
+	75% {
+		transform: scaleY(4.5) translateZ(0) scaleX(8.0)
+	}
+	100% {
+		transform: scaleY(6) translateZ(0) scaleX(9.0)
+	}
 }
