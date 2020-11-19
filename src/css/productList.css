@@ -1,7 +1,7 @@
 :root {
 	--text-light: rgba(255, 255, 255, 0.6);
 	--text-lighter: rgba(255, 255, 255, 0.9);
-  --width-container: 1200px;
+	--width-container: 1200px;
 }
 
 body,
@@ -52,7 +52,7 @@ h3 {
 	right: 0;
 	top: 0;
 	transform-origin: center;
-	transition: filter 1s linear, transform 500ms linear;
+	transition: filter 0.5s linear, transform 500ms linear;
 }
 
 .card:hover .cardFons {
@@ -60,7 +60,7 @@ h3 {
 }
 
 .card:hover .cardImage {
-	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .card-grid:hover>.card:not(:hover) .cardFons {
@@ -96,8 +96,6 @@ h3 {
 	max-height: 100%;
 }
 
-
-
 .descripcio {
 	background-color: white;
 	height: 300px;
@@ -114,43 +112,45 @@ h3 {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 0px 5%;
-  height: 70px;
-  margin-top: 18%;
-  color: black;
-  margin-left: 10%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 0px 5%;
+	height: 70px;
+	margin-top: 18%;
+	color: black;
+	margin-left: 10%;
 }
 
-.det1, .det2, .desc1{
-  bottom: 0;
+.det1,
+.det2,
+.desc1 {
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-.det1{
-  padding-left: 10%;
-  color: #888484;
-  margin-top: 10%;
-  font-weight: bold;
+.det1 {
+	padding-left: 10%;
+	color: #888484;
+	margin-top: 10%;
+	font-weight: bold;
 }
 
-.det2{
-  padding-left: 10%;
-  color: #888484;
-  margin-top: 40%;
-  font-weight: bold;
+.det2 {
+	padding-left: 10%;
+	color: #888484;
+	margin-top: 40%;
+	font-weight: bold;
 }
 
-.desc1{
-  color: black;
-  margin-top: 45%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: justify;
-  text-justify: inter-word;
+.desc1 {
+	color: black;
+	margin-top: 45%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .mainDetail {
@@ -161,21 +161,30 @@ h3 {
 	grid-area: 2 / 1 / 3 / 4;
 }
 
-.d1, .d2, .d3, .desc1, .D1, .D2, .D3{
-  font-family: 'Roboto';
+.d1,
+.d2,
+.d3,
+.desc1,
+.D1,
+.D2,
+.D3 {
+	font-family: 'Roboto';
 }
 
-.D1, .D2, .D3{
-  font-size: x-large;
-  font-weight: bold;
+.D1,
+.D2,
+.D3 {
+	font-size: x-large;
+	font-weight: bold;
 }
 
-.d1, .d2, .d3{
-  color: #888484;
+.d1,
+.d2,
+.d3 {
+	color: #888484;
 }
 
 .D1 {
- 
 	grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -198,7 +207,6 @@ h3 {
 .d3 {
 	grid-area: 2 / 3 / 3 / 4;
 }
-
 
 :target .descripcio {
 	display: flex;
@@ -223,9 +231,8 @@ h3 {
 }
 
 :target .cardInformacio {
-  z-index: 7;
-  overflow: visible;
-
+	z-index: 7;
+	overflow: visible;
 }
 
 .cardName {
@@ -236,219 +243,233 @@ h3 {
 	word-spacing: 100vw;
 }
 
-
-
-
-:target .cardPrice{
-  bottom: 0;
+:target .cardPrice {
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
-  top: 0;
-  z-index: 4;
-  animation: cardPriceTransition 1.5s ease;
+	top: 0;
+	z-index: 4;
+	animation: cardPriceTransition 1.5s ease;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
 
 @keyframes cardPriceTransition {
 	to {
-    margin-left: 15%;
-    color: white;
-    transform: scale(1.2);
-    margin-top: 80.5%;
+		margin-left: 15%;
+		color: white;
+		transform: scale(1.2);
+		margin-top: 80.5%;
 	}
 }
 
-
-.sub-main{
-  width: 98px;
-  height: 64px;
-  bottom: 10%;
+.sub-main {
+	width: 98px;
+	height: 64px;
+	bottom: 10%;
 	left: 70%;
 	position: absolute;
-  right: 0;
-  z-index: 8;
-  top: -3%;
-}
-
-.buyButton{
-  text-align: center;
-  cursor: pointer;
-  font-size:24px;
-  border-radius: 16px;
+	right: 0;
+	z-index: 8;
+	top: -3%;
 }
 
 .buyButton {
-  position: relative;
-  background-color: #E66D29;
-  color: white;
-  font-weight: bold;
-  border: none;
-  padding: 20px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	font-size: 24px;
+	border-radius: 16px;
 }
 
-.buyButton:hover{
- background:#dc5d14;
- box-shadow:0px 2px 10px 5px white;
- color:white;
+.buyButton {
+	position: relative;
+	background-color: #E66D29;
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
 }
 
+.buyButton:hover {
+	background: #dc5d14;
+	box-shadow: 0px 2px 10px 5px white;
+	color: white;
+}
 
 .catego-container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "price category"
-    ". catego";
-  left: 7%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "price category" ". catego";
+	left: 7%;
 	position: absolute;
 	right: 40%;
-  margin-top: 77%;
-  z-index: 8;
-  display: none;
+	margin-top: 77%;
+	z-index: 8;
+	display: none;
 }
 
-.price, .category{
-  font-size: small;
-  font-weight: bold;
-  color: white;
+.price,
+.category {
+	font-size: small;
+	font-weight: bold;
+	color: white;
 }
 
-.price { grid-area: price; }
-.category { grid-area: category; }
-.catego { 
-  grid-area: catego; 
-  color: white;
-  transform: scale(1.2);
-  font-size: large;
-  padding-left: 10px;
+.price {
+	grid-area: price;
 }
 
+.category {
+	grid-area: category;
+}
 
-:target .catego-container{
-  display: grid;
-  opacity: 0.0;
-  animation-delay: 10s;
-  animation: category 2.5s ease;
+.catego {
+	grid-area: catego;
+	color: white;
+	transform: scale(1.2);
+	font-size: large;
+	padding-left: 10px;
+}
+
+.backButton{
+	position: absolute;
+	height: 20px;
+	z-index: 25;
+	width: 100%;
+	pointer-events: none;
+	padding-top: 10px;
+	align-content: center;
+}
+
+.backButton a {
+	pointer-events: all;
+  }
+
+.backButton img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+:target .catego-container {
+	display: grid;
+	opacity: 0.0;
+	animation-delay: 10s;
+	animation: category 2.5s ease;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
 
-.like{
-  background-color: #E66D29;
-  border-radius: 16px;
-  width: 70px;
-  height: 70px;
-  left: 70%;
+.like {
+	background-color: #E66D29;
+	border-radius: 16px;
+	width: 70px;
+	height: 70px;
+	left: 70%;
 	position: absolute;
-  right: 40%;
-  top: 18%;
-  z-index: 8;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+	right: 40%;
+	top: 18%;
+	z-index: 8;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
-
-
 .scrollmenu {
-background-color: transparent;
-overflow: auto;
-white-space: nowrap;
-height: 30px;
-position: absolute;
-  right: 5%;
-  left: 5%;
-  top: 2%;
+	background-color: transparent;
+	overflow: auto;
+	white-space: nowrap;
+	height: 30px;
+	position: absolute;
+	right: 5%;
+	left: 5%;
+	top: 2%;
 }
 
 .scrollmenu::-webkit-scrollbar {
 	display: none;
-  }
+}
 
 .scrollmenu a {
-display: inline-block;
-color: gray;
-text-align: center;
-text-decoration: none;
-padding-right: 20px;
+	display: inline-block;
+	color: gray;
+	text-align: center;
+	text-decoration: none;
+	padding-right: 20px;
 }
 
 .scrollmenu a:hover {
-color: #EA612E;
+	color: #EA612E;
 }
 
-
-:target .crollmenu{
+:target .scrollmenu {
 	display: none;
 }
 
-
-:target .like{
-  display: flex;
-  animation: category 1.5s ease;
+:target .like {
+	display: flex;
+	animation: category 1.5s ease;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
 
-input[type = checkbox] {
-  display: none;
+input[type=checkbox] {
+	display: none;
 }
 
-input + label {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .1s all;
-  cursor: pointer;
-  z-index: 8;
+input+label {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .1s all;
+	cursor: pointer;
+	z-index: 8;
 }
 
-input + label:hover {
-  transform: scale(.8);
+input+label:hover {
+	transform: scale(.8);
 }
 
-input + label:after {
-  fill: white;
-  content: url(../../assets/icones/heart-empt.svg);
+input+label:after {
+	fill: white;
+	content: url(../../assets/icones/heart-empt.svg);
 }
 
-input:checked + label {
-  transform: scale(1.1);
+input:checked+label {
+	transform: scale(1.1);
 }
 
-input:checked + label:hover {
-  transform: scale(1.2);
+input:checked+label:hover {
+	transform: scale(1.2);
 }
 
-input:checked + label:after {
-  fill: white;
-  content: url(../../assets/icones/heart-full.svg);
+input:checked+label:after {
+	fill: white;
+	content: url(../../assets/icones/heart-full.svg);
 }
 
 @keyframes category {
-  from{
-    opacity: 0.0;
-  }
+	from {
+		opacity: 0.0;
+	}
 	to {
-    opacity: 1.0;
+		opacity: 1.0;
 	}
 }
 
-
 @keyframes glassesDetail {
 	to {
-    padding-top: 25%;
-    padding-right: 50%;
+		padding-top: 25%;
+		padding-right: 50%;
 		transform: scale(1.5);
 	}
 }
@@ -482,14 +503,36 @@ input:checked + label:after {
 	}
 }
 
+
+
 @media(min-width: 750px) {
 	.card-grid {
 		grid-template-columns: repeat(2, 1fr);
+		margin-top: 3%;
 	}
 	.card:hover .cardFons {
 		transform: scale(1.0) translateZ(0);
 	}
-	.deta {
+	.scrollmenu{
+		background-color: #E4B080;
+		position: absolute;
+		height: 60px;
+		right: 0%;
+		left: 0%;
+		bottom: 0%;
 		width: 100%;
+		align-content: center;
+		text-align: center;
 	}
+	.scrollmenu a {
+		font-size: 1.2rem;
+		padding-top: 15px;
+		color: white;
+		margin:0 auto;
+	}
+	
+	.scrollmenu a:hover {
+		color: #EA612E;
+	}
+	
 }
