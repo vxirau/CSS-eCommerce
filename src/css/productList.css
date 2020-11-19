@@ -120,8 +120,8 @@ h3 {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px 5%;
   height: 70px;
   margin-top: 18%;
   color: black;
@@ -220,8 +220,25 @@ h3 {
 	grid-template-columns: repeat(1, 1fr);
 }
 
+:target .cardImage {
+	animation: glassesDetail 1.5s ease;
+	z-index: 5;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
 :target .cardInformacio {
-	z-index: 7;
+  z-index: 7;
+  overflow: visible;
+
+}
+
+@keyframes glassesDetail {
+	to {
+    padding-top: 30%;
+    padding-right: 50%;
+		transform: scale(1.5);
+	}
 }
 
 @keyframes descriptionEnter {
