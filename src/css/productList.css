@@ -356,6 +356,41 @@ h3 {
   overflow: hidden;
 }
 
+
+
+.scrollmenu {
+background-color: transparent;
+overflow: auto;
+white-space: nowrap;
+height: 30px;
+position: absolute;
+  right: 5%;
+  left: 5%;
+  top: 2%;
+}
+
+.scrollmenu::-webkit-scrollbar {
+	display: none;
+  }
+
+.scrollmenu a {
+display: inline-block;
+color: gray;
+text-align: center;
+text-decoration: none;
+padding-right: 20px;
+}
+
+.scrollmenu a:hover {
+color: #EA612E;
+}
+
+
+:target .crollmenu{
+	display: none;
+}
+
+
 :target .like{
   display: flex;
   animation: category 1.5s ease;
