@@ -96,13 +96,7 @@ h3 {
 	max-height: 100%;
 }
 
-.cardName {
-	color: var(--text-lighter);
-	font-size: 1.6rem;
-	text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-	line-height: 1.4;
-	word-spacing: 100vw;
-}
+
 
 .descripcio {
 	background-color: white;
@@ -233,9 +227,131 @@ h3 {
 
 }
 
+.cardName {
+	color: var(--text-lighter);
+	font-size: 1.6rem;
+	text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+	line-height: 1.4;
+	word-spacing: 100vw;
+}
+
+
+
+
+:target .cardPrice{
+  bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+  top: 0;
+  z-index: 4;
+  animation: cardPriceTransition 1.5s ease;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes cardPriceTransition {
+	to {
+    margin-left: 15%;
+    color: white;
+    transform: scale(1.2);
+    margin-top: 80.5%;
+	}
+}
+
+
+.sub-main{
+  width: 98px;
+  height: 64px;
+  bottom: 10%;
+	left: 70%;
+	position: absolute;
+  right: 0;
+  z-index: 8;
+  top: -3%;
+}
+
+.buyButton{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  border-radius: 16px;
+}
+
+.buyButton {
+  position: relative;
+  background-color: #E66D29;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.buyButton:hover{
+ background:#dc5d14;
+ box-shadow:0px 2px 10px 5px #97B1BF;
+ color:white;
+}
+
+
+.catego-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "price category"
+    ". catego";
+  left: 7%;
+	position: absolute;
+	right: 40%;
+  margin-top: 77%;
+  z-index: 8;
+  display: none;
+}
+
+.price, .category{
+  font-size: small;
+  font-weight: bold;
+  color: white;
+}
+
+.price { grid-area: price; }
+.category { grid-area: category; }
+.catego { 
+  grid-area: catego; 
+  color: white;
+  transform: scale(1.2);
+  font-size: large;
+  padding-left: 10px;
+}
+
+
+:target .catego-container{
+  display: grid;
+  opacity: 0.0;
+  animation-delay: 10s;
+  animation: category 2.5s ease;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes category {
+  from{
+    opacity: 0.0;
+  }
+	to {
+    opacity: 1.0;
+	}
+}
+
+
 @keyframes glassesDetail {
 	to {
-    padding-top: 30%;
+    padding-top: 25%;
     padding-right: 50%;
 		transform: scale(1.5);
 	}
