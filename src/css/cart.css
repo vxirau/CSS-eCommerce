@@ -13,12 +13,10 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "chart chart chart chart"
-      "chart chart chart chart"
-      "checkOut checkOut checkOut checkOut"
       "checkOut checkOut checkOut checkOut";
     
   }
@@ -45,7 +43,7 @@ body {
     text-align: center;
   }
 
-.model, .price, .num, input[type="text"]::placeholder, .cart, .discount, .total{
+.model, .price, .num, input[type="text"]::placeholder, .cart, .discount, .total, .textDis{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: grey;
 }
@@ -57,8 +55,9 @@ body {
 
 .cart, .discount{
   /*display: inline-block;*/
-  margin-bottom: 5px;
+  padding-bottom: 15px;
 }
+
 
 
 
@@ -83,6 +82,8 @@ body {
 
 .chart { 
     grid-area: chart; 
+    
+    
   }
 
 ul{
@@ -107,7 +108,10 @@ li {
 }
   
   
-  .checkOut { grid-area: checkOut;}
+  .checkOut { 
+    grid-area: checkOut;
+    padding: 50px;
+  }
   
 
 
@@ -123,10 +127,7 @@ li {
     border-radius:22px;
     text-align: center;
     
-
-
  }
-
 
  .input-container{
     width: 100%;
@@ -187,13 +188,15 @@ li {
     float: right;
 }
 
-.cart {
-  float: left;
+.cart{
+  width: 100%;
+  margin: auto;
+  padding-left: 4rem;
 }
 
+
 .input-container2{
-  margin-top: 15px;
-  
+  margin-top: 15px; 
 }
 
 input[type="text"]::placeholder{
@@ -222,13 +225,15 @@ input[type="text"]::placeholder{
 }
 
 .btn:hover {
+  box-shadow: 0 2px 10px 5px #919191;
   background-color: #eee;
   color: #E56D29;
 
 }
 
 .btn:active{
-  transform: scale(0.7);
+  
+  transform: scale(0.9);
 }
   
 .img {
@@ -308,47 +313,102 @@ input[type="text"]::placeholder{
     background-color :#E4B080;
   }
 
-  .grid-container{
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "chart chart chart chart"
+      "checkOut checkOut checkOut checkOut";
     border-radius:22px;
     background-color: white;
-    padding: 30px;
+    padding: 10px;
     margin: 50px;
-  
-
+    height: 550px;
   }
+
+  .cart{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    margin:unset;
+    padding-left: unset;
+  }
+
+  
 
   #apartado1{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 150px 1fr 1fr;
     grid-gap: 10px;
-    background-image: radial-gradient(farthest-corner at 300px 1px ,  #E9E9E9 50%, #E2E2E2 50%);
-    height:115px;
+    grid-template-areas:
+    "img model price contador";
+    background-image: radial-gradient(farthest-corner at 400px 20px ,  #E9E9E9 50%, #E2E2E2 50%);
+    height:60px;
     border-radius:22px;
     text-align: center;
-    width: 100%;
+    width: 500px;
 
+ }
+
+ .contador{
+   grid-area: contador;
+   
+ }
+
+ .img{
+   grid-area: img;
+   height: 100%;
+   width: 100%;
+     
+ }
+
+ .model{
+   grid-area: model;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 60px;
+   font-size: 16px;     
+
+ }
+
+ .price{
+    grid-area: price;
+    text-align: center;
+   vertical-align: middle;
+   line-height: 60px; 
+   font-size: 20px;     
  }
 
   .input-container2{
     display: none;
   }
 
-  .input-container{
-    width: 70%;
-    margin-left: auto;
-  }
-
-
   .textDis{
-    display: inline-block;
-    margin-right: 3px;
+    display: unset;
+    width: 49%;
+    float: left;
+    text-align: end;
+    padding-top: 10px;
+
   }
-  
 
+  .input-container{
+    display: inline;
+    float: right;
+    width: 50%;
+    
+  }
 
+  .discount{
+    display: none;
+  }
 
-
-
+  .checkOut { 
+    grid-area: checkOut;
+    padding: 20px;
+  }
 }
 
 
