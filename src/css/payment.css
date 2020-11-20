@@ -1,0 +1,301 @@
+:root {
+	--text-light: white;
+	--text-grey: grey;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--text-light);
+    
+}
+
+p, label, button{
+    font-family: RobotoDraft, Roboto, sans-serif;
+    color: var(--text-grey);
+}
+
+h1{
+    font-family: RobotoDraft, Roboto, sans-serif;
+    color: var(--text-grey);
+    font-size: large;
+}
+
+h2, h3{
+    font-family: RobotoDraft, Roboto, sans-serif;
+    font-weight: bold;
+    color: var(--text-grey);
+    font-size: medium;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "pay "
+      "method";
+    padding: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "button title search";
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+.button { 
+    grid-area: button; 
+    text-align: center;
+}
+
+.title {    
+    grid-area: title; 
+    text-align: center;
+}
+.search { 
+    grid-area: search; 
+    text-align: center;
+}
+
+.payment, .adress, .shipping, .input-field2, .input-field4{
+    margin-bottom: 15px;
+}
+
+.input-container input:focus, .input-container input:active, .input-container2 input:focus, .input-container2 input:active {
+    outline: none;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-field{
+    background-color: #E2E2E2;
+    border-radius:22px;
+    height: 40px;
+    border: none;
+    width: 100%;
+}
+
+.adrLBL, .shpLBL{
+    display: none;
+}
+
+.input-container2{
+    margin-top: 15px; 
+    
+}
+
+.aux{
+    float: right;
+}
+
+.input-field2{
+    background-color: #E2E2E2;
+    border-radius:22px;
+    height: 40px;
+    border: none;
+    width: 100%;
+}
+
+ul {
+    width: 305px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    
+}
+ 
+ li {
+    display:inline;
+    padding-left: 50px;
+}
+
+.input-container3{
+    padding: 30px;
+}
+
+
+.input-field3_1{
+    background-image: url(../../assets/icones/visa.svg);
+    border-radius:22px;
+    height: 35px;
+    width: 60px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.input-field3_2{
+    background-image: url(../../assets/icones/payPal.svg);
+    border-radius:22px;
+    height: 35px;
+    width: 140px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-field3_3{
+    background-image: url(../../assets/icones/mastercard.svg);
+    border-radius:22px;
+    height: 35px;
+    width: 140px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.input-field4{
+    background-color: #E2E2E2;
+    border-radius:22px;
+    height: 40px;
+    border: none;
+}
+
+.btn{
+  color: var(--text-light);
+  font-weight: bold;
+  border: none;
+  background-color:#93471C;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 10px 5px #919191;
+    background-color: #eee;
+    color: #93471C;
+}
+  
+.btn:active{
+    transform: scale(0.9);
+}
+    
+
+
+
+input[type="text"]::placeholder{
+    text-align: center;
+}
+
+
+
+
+@media(min-width: 640px){
+
+    ul{
+        width: 430px;
+    }
+
+}
+
+@media(min-width: 730px){
+
+    ul{
+        width: 630px;
+    }
+
+    .input-container3{
+        padding: 20px;
+    }
+
+}
+
+
+
+
+@media(min-width: 750px){
+
+    body{
+        background-color :#E4B080;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "pay "
+          "method";
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: var(--text-light);
+        border-radius:22px;
+        margin: 50px;
+        height: 400px;
+    }
+
+    ul{
+        width: 430px;
+    }
+
+    .input-container3{
+        padding: 30px;
+    }
+
+    .payment{
+        width: 100%;
+        text-align: center;
+        
+        
+    }
+
+    .input-field, .input-field2{
+        width: 60%;
+        float: right;
+    }
+
+    .adress{
+        display: none;
+    }
+
+    .shipping{
+        display: none;
+    }
+
+    .adrLBL, .shpLBL{
+        display: unset;
+        width: 35%;
+        float: left;
+        text-align: end;
+        padding-top: 10px;
+    }
+
+}
+
+
+@media(min-width: 880px){
+
+    ul{
+        width: 630px;
+    }
+
+    .input-container3{
+        padding-left: 25%;
+        
+    }
+
+}
+
