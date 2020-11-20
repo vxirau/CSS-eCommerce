@@ -474,6 +474,13 @@ input:checked+label:after {
 }
 
 @media (min-width:750px) {
+	.like {
+		left: 110%;
+		position: absolute;
+		right: 40%;
+		top: 620px;
+	}
+
 	.det1 {
 		margin-top: 20px;
 	}
@@ -491,7 +498,6 @@ input:checked+label:after {
 	}
 	
 	.sub-main {
-		width: 98px;
 		height: 64px;
 		bottom: 0;
 		left: 10%;
@@ -503,26 +509,12 @@ input:checked+label:after {
 	}
 	
 	.buyButton {
-		cursor: pointer;
-		font-size: 24px;
-		border-radius: 16px;
 		width: 90%;
-		position: relative;
-		background-color: #e66d29;
-		color: #fff;
-		font-weight: 700;
-		border: none;
-		text-align: center;
-		transition-duration: .4s;
-		text-decoration: none;
-		overflow: hidden;
 	}
-	
+
 	.buyButton:hover {
-		background: #dc5d14;
-		box-shadow: 0 2px 10px 5px #fff;
-		color: #fff
-	}
+		box-shadow: 0 2px 10px 5px #919191;
+	}	
 
 	.card-grid {
 		grid-template-columns: repeat(2, 1fr);
