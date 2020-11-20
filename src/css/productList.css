@@ -505,13 +505,10 @@ input:checked+label:after {
 }
 
 @media(min-width: 750px) {
-	.card-grid {
-		display: flex;
-	}
 
-	.card{
-		flex: 1;
-		height: 300px;
+	.card-grid {
+		grid-template-columns: repeat(2, 1fr);			
+		margin-top: 3%;
 	}
 
 	.card:hover .cardFons {
@@ -552,10 +549,7 @@ input:checked+label:after {
 	}
 	
 	:target .cardFons {
-		display: inline-block;
-		justify-self: center;
-		align-self: center;
-		height: 2em;
+		transform-origin: center center;
 		animation: enlargeDesktop 2s ease;
 		animation-timing-function: linear;
 		animation-fill-mode: forwards;
@@ -587,16 +581,7 @@ input:checked+label:after {
 
 }
 
-@keyframes prova{
-	to{
-		border-radius: 0;
-		z-index: 9999; 
-		width: 100%; 
-		height: 100%; 
-		top: 0; 
-		left: 0; 
-	}
-}
+
 
 
 @keyframes categoryDesktop {
@@ -610,10 +595,9 @@ input:checked+label:after {
 
 @keyframes glassesDetailDesktop {
 	to {
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
+		padding-top: 25%;
+		padding-right: 50%;
+		transform: scale(1.5);
 	}
 }
 
