@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
+    <link rel="icon" type="image/png" href="../../assets/icones/favicon.svg"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
-    <header> 
-        <div class ="navegacion">
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu">
-                <div class="btn-menu"> 
-                    <div class="btn-line"></div> 
-                    <div class="btn-line"></div> 
-                    <div class="btn-line"></div> 
-                </div>
-            </label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">LIST</a></li>
-                    <li><a href="">SEARCH</a></li>
-                    <li><a href="">CART</a></li>
-                    <li><a href="">FAVORITE</a></li>
-                </ul>
+    <header class ="navbar-header"> 
+      <div class="menu-container">
+  
+        <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+        
+        <div class="hamburger-icon">
+          <label for="openmenu" id="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>    
+        </div>
+        
+          <div class="menu-pane"> 
+            <nav>
+              <ul class="menu-links">
+                <li><a href="###">HOME</a> </li>
+                <li><a href="###">LIST</a></li>
+                <li><a href="###">SEARCH</a></li>
+                <li><a href="###">CART</a></li>
+                <li><a href="###">FAVORITE</a></li>
+              </ul>  
             </nav>
+          </div>
+        
+      </div>
+
+      <div class="logo">
+        <p><a href="">googles</a></p>
+      </div>
+      
+      <div id="wrap">
+        <form action="" autocomplete="off">
+        <input id="search" name="search" type="text" placeholder="Que desea buscar?"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+
+    </header>  
+    
+    <div class="card-grid">
+      <a class="card" href="#producte1" id="producte1" >
+        <div class="cardFons" style="background-color: #D2BB68;" ></div>
+        <div class="cardInformacio">
+            <p class="cardPrice">225€</p>
+            <h3 class="cardName">Block Gold Imogene</h3>
+            <img class="cardImage" src="../../assets/producte/gafas.png" alt="g">
         </div>
-        <div class="logo">
-            <img src="" alt=""></img>
-        </div>
-        <div>
-            <input type="checkbox" id="click-lupa">
-            <img src="" alt=""></img>
-        </div>
-    </header>
+      </a>
+    </div>
+
+    <div class="footer">
+      <ul class="img">
+        <li><a href="#explora"><img src="../../assets/icones/Vector.svg"></img></a></li>
+        <li><a href="#lista"><img src="../../assets/icones/list.svg"></img></a></li>
+        <li><a href="#like"><img src="../../assets/icones/Vector (1).svg"></img></a></li>
+        <li><a href="#tienda"><img src="../../assets/icones/shop.svg"></img></a></li>
+      </ul>
+      <p>Googles © All rights reserved</p>
+    </div>
+
 </body>
 </html>

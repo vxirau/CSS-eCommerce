@@ -1,41 +1,36 @@
 :root {
 	--text-light: rgba(255, 255, 255, 0.6);
-	--text-lighter: rgba(255, 255, 255, 0.9);
-	--width-container: 1200px;
+	--text-lighter: rgba(255, 255, 255, 0.9)
 }
 
+a,
 body,
-a {
-	font-family: 'RobotoDraft', 'Roboto', sans-serif;
-	-webkit-font-smoothing: antialiased;
-}
-
-p,
-h3 {
-	font-family: 'RobotoDraft', 'Roboto', sans-serif;
-	-webkit-font-smoothing: antialiased;
+h3,
+p {
+	font-family: RobotoDraft, Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased
 }
 
 .card-grid {
 	display: grid;
-	margin-top: 20px;
+	margin-top: 40%;
 	grid-template-columns: repeat(1, 1fr);
 	grid-row-gap: 24px;
 	grid-column-gap: 24px;
 	margin: auto;
-	width: 70%;
+	width: 70%
 }
 
 .card {
 	list-style: none;
 	position: relative;
-	height: 300px;
+	height: 300px
 }
 
 .card:before {
 	content: '';
 	display: block;
-	width: 100%;
+	width: 100%
 }
 
 .cardFons {
@@ -52,23 +47,23 @@ h3 {
 	right: 0;
 	top: 0;
 	transform-origin: center;
-	transition: filter 1s linear, transform 500ms linear;
+	transition: filter .5s linear, transform .5s linear
 }
 
 .card:hover .cardFons {
-	transform: scale(1.0) translateZ(0) scaleX(1.2);
+	transform: scale(1) translateZ(0) scaleX(1.2)
 }
 
 .card:hover .cardImage {
-	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all .5s cubic-bezier(.645, .045, .355, 1)
 }
 
 .card-grid:hover>.card:not(:hover) .cardFons {
-	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+	filter: brightness(.5) saturate(0) contrast(1.2) blur(20px)
 }
 
 .card-grid:hover>.card:not(:hover) .cardImage {
-	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+	filter: brightness(.5) saturate(0) contrast(1.2) blur(20px)
 }
 
 .cardInformacio {
@@ -77,29 +72,27 @@ h3 {
 	position: absolute;
 	top: 0;
 	overflow: hidden;
+	height: 100%
 }
 
 .cardPrice {
 	color: var(--text-light);
 	font-size: 1.3rem;
 	margin-bottom: var(--spacing-s);
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 .cardImage {
 	left: 100px;
-	padding: 24px;
 	position: absolute;
 	top: 0;
-	max-width: 100%;
+	max-width: 90%;
 	transition: 1s;
-	max-height: 100%;
+	max-height: 90%
 }
 
-
-
 .descripcio {
-	background-color: white;
+	background-color: #fff;
 	height: 300px;
 	z-index: 7;
 	bottom: 0;
@@ -107,103 +100,114 @@ h3 {
 	position: absolute;
 	right: 0;
 	top: 0;
-	border-radius: 45px 45px 0px 0px;
-	display: none;
+	border-radius: 45px 45px 0 0;
+	display: none
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 0px 5%;
-  height: 70px;
-  margin-top: 18%;
-  color: black;
-  margin-left: 10%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 0 5%;
+	height: 70px;
+	margin-top: 18%;
+	color: #000;
+	margin-left: 10%
 }
 
-.det1, .det2, .desc1{
-  bottom: 0;
+.desc1,
+.det1,
+.det2 {
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 0
 }
 
-.det1{
-  padding-left: 10%;
-  color: #888484;
-  margin-top: 10%;
-  font-weight: bold;
+.det1 {
+	padding-left: 10%;
+	color: #888484;
+	margin-top: 10%;
+	font-weight: 700
 }
 
-.det2{
-  padding-left: 10%;
-  color: #888484;
-  margin-top: 40%;
-  font-weight: bold;
+.det2 {
+	padding-left: 10%;
+	color: #888484;
+	margin-top: 40%;
+	font-weight: 700;
 }
 
-.desc1{
-  color: black;
-  margin-top: 45%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: justify;
-  text-justify: inter-word;
+.desc1 {
+	color: #000;
+	margin-top: 45%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+	text-justify: inter-word
 }
 
 .mainDetail {
-	grid-area: 1 / 1 / 2 / 4;
+	grid-area: 1/1/2/4
 }
 
 .detailDescription {
-	grid-area: 2 / 1 / 3 / 4;
+	grid-area: 2/1/3/4
 }
 
-.d1, .d2, .d3, .desc1, .D1, .D2, .D3{
-  font-family: 'Roboto';
+.D1,
+.D2,
+.D3,
+.d1,
+.d2,
+.d3,
+.desc1 {
+	font-family: Roboto
 }
 
-.D1, .D2, .D3{
-  font-size: x-large;
-  font-weight: bold;
+.D1,
+.D2,
+.D3 {
+	font-size: x-large;
+	font-weight: 700
 }
 
-.d1, .d2, .d3{
-  color: #888484;
+.d1,
+.d2,
+.d3 {
+	color: #888484
 }
 
 .D1 {
- 
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1/1/2/2
 }
 
 .D2 {
-	grid-area: 1 / 2 / 2 / 3;
+	grid-area: 1/2/2/3
 }
 
 .D3 {
-	grid-area: 1 / 3 / 2 / 4;
+	grid-area: 1/3/2/4
 }
 
 .d1 {
-	grid-area: 2 / 1 / 3 / 2;
+	grid-area: 2/1/3/2
 }
 
 .d2 {
-	grid-area: 2 / 2 / 3 / 3;
+	grid-area: 2/2/3/3
 }
 
 .d3 {
-	grid-area: 2 / 3 / 3 / 4;
+	grid-area: 2/3/3/4
 }
 
 :target .descripcio {
 	display: flex;
 	animation: descriptionEnter 1s ease;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards
 }
 
 :target .cardFons {
@@ -211,189 +215,433 @@ h3 {
 	z-index: 5;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(1, 1fr)
 }
 
 :target .cardImage {
 	animation: glassesDetail 1.5s ease;
 	z-index: 5;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards
 }
 
 :target .cardInformacio {
-  z-index: 7;
-  overflow: visible;
-
+	z-index: 7;
+	overflow: visible
 }
 
 .cardName {
 	color: var(--text-lighter);
 	font-size: 1.6rem;
-	text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+	text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
 	line-height: 1.4;
-	word-spacing: 100vw;
+	word-spacing: 100vw
 }
 
-
-
-
-:target .cardPrice{
-  bottom: 0;
+:target .cardPrice {
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
-  top: 0;
-  z-index: 4;
-  animation: cardPriceTransition 1.5s ease;
+	top: 0;
+	z-index: 4;
+	animation: cardPriceTransition 1.5s ease;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards
 }
 
 @keyframes cardPriceTransition {
 	to {
-    margin-left: 15%;
-    color: white;
-    transform: scale(1.2);
-    margin-top: 80.5%;
+		margin-left: 15%;
+		color: #fff;
+		transform: scale(1.2);
+		margin-top: 80.5%
 	}
 }
 
-
-.sub-main{
-  width: 98px;
-  height: 64px;
-  bottom: 10%;
+.sub-main {
+	width: 98px;
+	height: 64px;
+	bottom: 10%;
 	left: 70%;
 	position: absolute;
-  right: 0;
-  z-index: 8;
-  top: -3%;
-}
-
-.buyButton{
-  text-align: center;
-  cursor: pointer;
-  font-size:24px;
-  border-radius: 16px;
+	right: 0;
+	z-index: 8;
+	top: -3%
 }
 
 .buyButton {
-  position: relative;
-  background-color: #E66D29;
-  color: white;
-  font-weight: bold;
-  border: none;
-  padding: 20px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
+	cursor: pointer;
+	font-size: 24px;
+	border-radius: 16px;
+	position: relative;
+	background-color: #e66d29;
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	transition-duration: .4s;
+	text-decoration: none;
+	overflow: hidden
 }
 
-.buyButton:hover{
- background:#dc5d14;
- box-shadow:0px 2px 10px 5px #97B1BF;
- color:white;
+.buyButton:hover {
+	background: #dc5d14;
+	box-shadow: 0 2px 10px 5px #fff;
+	color: #fff
 }
-
 
 .catego-container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "price category"
-    ". catego";
-  left: 7%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0 0;
+	grid-template-areas: "price category" ". catego";
+	left: 7%;
 	position: absolute;
 	right: 40%;
-  margin-top: 77%;
-  z-index: 8;
-  display: none;
+	margin-top: 77%;
+	z-index: 8;
+	display: none
 }
 
-.price, .category{
-  font-size: small;
-  font-weight: bold;
-  color: white;
+.category,
+.price {
+	font-size: small;
+	font-weight: 700;
+	color: #fff
 }
 
-.price { grid-area: price; }
-.category { grid-area: category; }
-.catego { 
-  grid-area: catego; 
-  color: white;
-  transform: scale(1.2);
-  font-size: large;
-  padding-left: 10px;
+.price {
+	grid-area: price
 }
 
+.category {
+	grid-area: category;
+	white-space: nowrap
+}
 
-:target .catego-container{
-  display: grid;
-  opacity: 0.0;
-  animation-delay: 10s;
-  animation: category 2.5s ease;
+.catego {
+	grid-area: catego;
+	color: #fff;
+	font-size: 1.3rem
+}
+
+:target .catego-container {
+	display: grid;
+	opacity: 0;
+	animation-delay: 10s;
+	animation: category 2.5s ease;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards
+}
+
+.like {
+	background-color: #e66d29;
+	border-radius: 16px;
+	width: 70px;
+	height: 70px;
+	left: 70%;
+	position: absolute;
+	right: 40%;
+	top: 18%;
+	z-index: 8;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden
+}
+
+.scrollmenu {
+	background-color: transparent;
+	overflow: auto;
+	white-space: nowrap;
+	height: 30px;
+	position: absolute;
+	right: 5%;
+	left: 5%;
+	top: 2%
+}
+
+.scrollmenu::-webkit-scrollbar {
+	display: none
+}
+
+.scrollmenu a {
+	display: inline-block;
+	color: gray;
+	text-align: center;
+	text-decoration: none;
+	padding-right: 20px
+}
+
+.scrollmenu a:hover {
+	color: #ea612e
+}
+
+:target .scrollmenu {
+	display: none
+}
+
+:target .like {
+	display: flex;
+	animation: category 1.5s ease;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards
+}
+
+input[type=checkbox] {
+	display: none
+}
+
+input+label {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .1s all;
+	cursor: pointer;
+	z-index: 8
+}
+
+input+label:hover {
+	transform: scale(.8)
+}
+
+input+label:after {
+	fill: #fff;
+	content: url(../../assets/icones/heart-empt.svg)
+}
+
+input:checked+label {
+	transform: scale(1.1)
+}
+
+input:checked+label:hover {
+	transform: scale(1.2)
+}
+
+input:checked+label:after {
+	fill: #fff;
+	content: url(../../assets/icones/heart-full.svg)
 }
 
 @keyframes category {
-  from{
-    opacity: 0.0;
-  }
+	from {
+		opacity: 0
+	}
 	to {
-    opacity: 1.0;
+		opacity: 1
 	}
 }
 
-
 @keyframes glassesDetail {
 	to {
-    padding-top: 25%;
-    padding-right: 50%;
-		transform: scale(1.5);
+		padding-top: 20%;
+		padding-right: 60%;
+		transform: scale(1.3)
 	}
 }
 
 @keyframes descriptionEnter {
 	from {
 		margin-top: 190%;
-		height: 300%;
+		height: 250%
 	}
 	to {
 		margin-top: 90%;
-		height: 300%;
+		height: 250%
 	}
 }
 
 @keyframes enlarge {
 	0% {
-		transform: scaleY(1.0) translateZ(0) scaleX(1.2)
+		transform: scaleY(1) translateZ(0) scaleX(1.2)
 	}
 	25% {
 		transform: scaleY(4) translateZ(0) scaleX(1.2)
 	}
 	50% {
-		transform: scaleY(4.5) translateZ(0) scaleX(2.0)
+		transform: scaleY(4.5) translateZ(0) scaleX(2)
 	}
 	75% {
-		transform: scaleY(5.5) translateZ(0) scaleX(2.0)
+		transform: scaleY(5.5) translateZ(0) scaleX(2)
 	}
 	100% {
-		transform: scaleY(7) translateZ(0) scaleX(2.0)
+		transform: scaleY(7) translateZ(0) scaleX(2)
 	}
 }
 
-@media(min-width: 750px) {
+@media (min-width:750px) {
+	.det1 {
+		margin-top: 20px;
+	}
+	
+	.det2 {
+		margin-top: 140px;
+	}
+
+	.desc1 {
+		margin-top: 160px;
+	}
+
+	.grid-container {
+		margin-top: 60px;
+	}
+	
+	.sub-main {
+		width: 98px;
+		height: 64px;
+		bottom: 0;
+		left: 10%;
+		position: absolute;
+		right: 10%;
+		z-index: 8;
+		top: 350px;
+		width: 90%;		
+	}
+	
+	.buyButton {
+		cursor: pointer;
+		font-size: 24px;
+		border-radius: 16px;
+		width: 90%;
+		position: relative;
+		background-color: #e66d29;
+		color: #fff;
+		font-weight: 700;
+		border: none;
+		text-align: center;
+		transition-duration: .4s;
+		text-decoration: none;
+		overflow: hidden;
+	}
+	
+	.buyButton:hover {
+		background: #dc5d14;
+		box-shadow: 0 2px 10px 5px #fff;
+		color: #fff
+	}
+
 	.card-grid {
 		grid-template-columns: repeat(2, 1fr);
+		margin-top: 3%
 	}
 	.card:hover .cardFons {
-		transform: scale(1.0) translateZ(0);
+		transform: scale(1) translateZ(0)
 	}
-	.deta {
+	.scrollmenu {
+		background-color: #e4b080;
+		position: absolute;
+		height: 60px;
+		right: 0;
+		left: 0;
+		bottom: 0;
 		width: 100%;
+		align-content: center;
+		text-align: center
+	}
+	.scrollmenu a {
+		font-size: 1.2rem;
+		padding-top: 15px;
+		color: #fff;
+		margin: 0 auto
+	}
+	.scrollmenu a:hover {
+		color: #ea612e
+	}
+	:target .descripcio {
+		animation: descriptionEnterDesktop 1s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+	:target .card {
+		transition: scaleX(2);
+		transition: scale 1s
+	}
+	:target .cardFons {
+		transform-origin: center center;
+		animation: enlargeDesktop 2s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+	:target .cardImage {
+		animation: glassesDetailDesktop 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+	:target .cardPrice {
+		animation: cardPriceTransitionDesktop 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+	:target .catego-container {
+		animation: categoryDesktop 2.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+	:target .like {
+		animation: categoryDesktop 1.5s ease;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards
+	}
+}
+
+@keyframes cardPriceTransitionDesktop {
+	to {
+		margin-left: 15%;
+		color: #fff;
+		transform: scale(1.2);
+		margin-top: 80.9%
+	}
+}
+
+@keyframes categoryDesktop {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes glassesDetailDesktop {
+	to {
+		padding-top: 23%;
+		padding-right: 70%;
+		transform: scale(1.3)
+	}
+}
+
+@keyframes descriptionEnterDesktop {
+	from {
+		margin-top: 190%;
+		height: 50%;
+		width: 50%
+	}
+	to {
+		border-radius: 45px;
+		margin-top: 90%;
+		height: 145%;
+		width: 140%
+	}
+}
+
+@keyframes enlargeDesktop {
+	0% {
+		transform: scaleY(1) translateZ(0) scaleX(1.2)
+	}
+	25% {
+		transform: scaleY(3) translateZ(0) scaleX(3.2)
+	}
+	50% {
+		transform: scaleY(3.5) translateZ(0) scaleX(4)
+	}
+	75% {
+		transform: scaleY(4.5) translateZ(0) scaleX(4)
+	}
+	100% {
+		transform: scaleY(6) translateZ(0) scaleX(6)
 	}
 }
