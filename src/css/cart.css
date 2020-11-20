@@ -119,7 +119,7 @@ li {
   
 
 
-  #apartado1{
+  #apartado1, #apartado2, #apartado3, #apartado4{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -132,6 +132,8 @@ li {
     text-align: center;
     
  }
+
+
 
  .input-container{
     width: 100%;
@@ -340,7 +342,7 @@ input[type="text"]::placeholder{
 
   
 
-  #apartado1{
+  #apartado1, #apartado2, #apartado3, #apartado4{
     display: grid;
     grid-template-columns: 1fr 150px 1fr 1fr;
     grid-gap: 10px;
