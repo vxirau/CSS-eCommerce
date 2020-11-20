@@ -4,20 +4,16 @@
 }
 
 body,
-a {
-	font-family: 'RobotoDraft', 'Roboto', sans-serif;
-	-webkit-font-smoothing: antialiased;
-}
-
-p,
+a,p,
 h3 {
 	font-family: 'RobotoDraft', 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
+
 .card-grid {
 	display: grid;
-	margin-top: 20px;
+	margin-top: 40%;
 	grid-template-columns: repeat(1, 1fr);
 	grid-row-gap: 24px;
 	grid-column-gap: 24px;
@@ -43,6 +39,7 @@ h3 {
 	background-position-y: top;
 	background-repeat: no-repeat;
 	background-position-x: right;
+	/*background-image: radial-gradient(farthest-corner at 300px 1px ,  #E9E9E9 50%, #E2E2E2 50%);*/
 	-webkit-transition: background-image 0s;
 	border-radius: 24px;
 	bottom: 0;
@@ -356,8 +353,6 @@ h3 {
 	display: block;
 }
 
-
-
 :target .catego-container {
 	display: grid;
 	opacity: 0.0;
@@ -514,6 +509,7 @@ input:checked+label:after {
 	.card:hover .cardFons {
 		transform: scale(1.0) translateZ(0);
 	}
+
 	.scrollmenu{
 		background-color: #E4B080;
 		position: absolute;
@@ -543,9 +539,8 @@ input:checked+label:after {
 	}
 
 	:target .card{
-		width: 200vw;
-		height: 1200vh;
-		transition: width 1s, height 1s;
+		transition: scaleX(2.0);
+		transition: scale 1s;
 	}
 	
 	:target .cardFons {
@@ -574,14 +569,12 @@ input:checked+label:after {
 	}
 
 	:target .like {
-		animation: categoryDesktop 1.5s ease;
+		/*animation: categoryDesktop 1.5s ease;
 		animation-timing-function: linear;
-		animation-fill-mode: forwards;
+		animation-fill-mode: forwards;*/
 	}
 
 }
-
-
 
 
 @keyframes categoryDesktop {
@@ -602,10 +595,6 @@ input:checked+label:after {
 }
 
 @keyframes descriptionEnterDesktop {
-	from {
-		margin-top: 190%;
-		height: 300%;
-	}
 	to {
 		margin-top: 90%;
 		height: 300%;
